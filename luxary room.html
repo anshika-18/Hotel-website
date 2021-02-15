@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>luxary room</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+</script>
+<style>
+
+</style>
+</head>
+<body style="background-color:whitesmoke">
+<div style="text-align:center">
+<div style="font-size:90px;color:blue;">HOTEL THE SUNSHINE </div><div><img src="hotel7.jpg" height="400px" width="600px" style="border:15px solid white;"></div>
+</div>
+<center style="font-size:60px;">LUXARY ROOM</center>
+<center style="font-size:40px;"><br>PRICE<br>Rs. 6000/per night</center>
+<br><br>
+<br><br>
+<div id="r1"style="float:left;border: 5px solid black; width:470px; height:300px;margin-left:15px; background-color:white;">
+<marquee >
+<img src="luxary1.jpg" id="s1" height="300px" width="450px" >
+</marquee>
+</div>
+<div id="r1"style="float:left;border: 5px solid black; width:470px; height:300px;margin-left:25px;background-color:white;">
+<marquee>
+<img src="luxary2.jpg" id="s2"height="300px" width="450px" >
+</marquee>
+</div>
+<div id="r1" style="border:5px solid black; width:470px; height:300px;float:right;margin-right:15px;background-color:white;">
+<marquee>
+<img src="luxarybathroom.jpg" id="s3"height="300px" width="450px">
+</marquee>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+<p style="margin-left:180px;margin-right:180px;font-size:40px;">DESCRIPTION</p>
+<p style="margin-left:180px;margin-right:180px;font-size:25px;font-family:script mt bold;">Enjoy our classic suites with all the elegancy and comfort that its interior has...
+ It features such essentials as a flat-screen 45" TV, WiFi and 2 bathrooms with a 
+ living room and 2 bedrooms, big and chic enough to be counted as real suite bedrooms!</p>
+ <hr><br>
+<p style="margin-left:200px;font-size:50px;">ROOM DETAILS:</p>
+<ul style="margin-left:200px; font-size:25px;">
+<li>max allowed children:2</li>
+<li>Facilites:Bathroom tub and shower and hair Dryer,Digital Personal Safe,Free high speed Wi-Fi <br>and cable internet access,HD flat-screen TV (including Satellite TV)</li>
+<li>balconay view</li>
+<li>BED TYPE: two double bed.</li>
+<li>attacted bathroom</li>
+</ul>
+ <hr>
+ <br>
+ <div>
+ <img src="hotel9.jpg" height="600px" width="1100px" style="margin-left:200px">
+ </div>
+ <div style="margin-left:350px;border:2px solid black; margin-right:510px;padding:20px;background-color:white;">
+ <p style="font-size:50px">RESERVATION FORM</p>
+ 
+ <form style="font-size:30px;" method="post" action="myphp.php">
+ <label for="roomtype" style="font-family:forte">ROOM TYPE:</label><br> 
+ <input type="text" name="roomtype" for="roomtype" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"value="luxary room"></input><br>
+ <label for="roomprice" style="font-family:forte">ROOM PRICE:</label><br> 
+ <input type="number" name="price" for="roomprice" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"value="6000"></input><br>
+ <label for="name" style="font-family:forte">NAME:</label><br>
+ <input type="text" name="name" for="name" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"placeholder="Enter name"></input><br>
+
+ <label for="address" style="font-family:forte">ADDRESS:</label><br>
+ <input type="text" name="address" for="address" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"placeholder="Enter your home address"></input><br>
+ 
+ <label for="phone" style="font-family:forte">PHONE NUMBER:</label><br>
+ <input type="text" name="phone" for="phone" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"placeholder="Enter working phone number"></input><br>
+ <label for="arrival" style="font-family:forte">ARRIVAL:</label><br>
+ <input type="date" name="arrivaldate" for="date of arrival" style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"></input><br>
+ 
+ <label for="departure" style="font-family:forte">DEPARTURE:</label><br>
+ <input type="date" name="departuredate" for="date of departure"style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold"></input><br>
+ 
+ <label for="adults" style="font-family:forte">ADULTS:</label><br>
+ <select name="adults"style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+<br>
+
+<label for="children" style="font-family:forte">CHILDREN:</label><br>
+<select name="child"style="width:600px;height:40px;background-color:bisque;border:2px solid mistyRose;font-family:script mt bold">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+<br><br>
+
+<input type="submit" value="Reserve Now..!!" style="width:200px;margin-left:200px;height:40px;font-size:20px;border:2px double black;cursor:pointer"></input>
+ </form>
+ 
+ 
+  </div>
+ <div>
+<label for="feedback"><h2>FEEDBACK:</h2></label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:50px; width:1500px;"></textarea>
+<input type="submit" value="submit"style="margin-left:1400px;height:30px;width:100px;">
+</div>
+</body>
+</html>

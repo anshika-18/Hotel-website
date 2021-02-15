@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hotel sunshine</title>
+<style>
+#head
+{
+font-size:50px;
+color:blue;
+border:1px double black;
+text-align:center;
+}
+#a
+{
+border:2px double black;
+position:absolute;
+font-size:40px;
+margin-top:470px;
+padding:10px;
+}
+#ahk
+{
+height:90px;
+width:250px;
+font-size:25px;
+}
+
+</style>
+<script>
+function single()
+{
+var x=document.getElementById("single");
+x.style.backgroundColor="lightblue";
+}
+function singleover()
+{
+var x=document.getElementById("single");
+x.style.backgroundColor="white";
+}
+function double()
+{
+var x=document.getElementById("double");
+x.style.backgroundColor="lightblue";
+}
+function doubleover()
+{
+var x=document.getElementById("double");
+x.style.backgroundColor="white";
+}function family()
+{
+var x=document.getElementById("family");
+x.style.backgroundColor="lightblue";
+}
+function familyover()
+{
+var x=document.getElementById("family");
+x.style.backgroundColor="white";
+}function luxary()
+{
+var x=document.getElementById("luxary");
+x.style.backgroundColor="lightblue";
+}
+function luxaryover()
+{
+var x=document.getElementById("luxary");
+x.style.backgroundColor="white";
+}
+function check()
+{
+var x=document.getElementById("ahk");
+x.style.backgroundColor="black";
+x.style.cursor="pointer";
+}
+function checkover()
+{
+var x=document.getElementById("ahk");
+x.style.backgroundColor="brown";
+}
+function confirm1()
+{
+if(confirm("Are you sure that you want to book a room in our hotel.?"))
+{
+window.location.assign("single room.html");
+}
+else
+{
+window.location.assign("sunshine.html");
+}
+}
+function confirm2()
+{
+if(confirm("Are you sure that you want to book a room in our hotel.?"))
+{
+window.location.assign("double room.html");
+}
+else
+{
+window.location.assign("sunshine.html");
+}
+}
+function confirm3()
+{
+if(confirm("Are you sure that you want to book a room in our hotel.?"))
+{
+window.location.assign("family room.html");
+}
+else
+{
+window.location.assign("sunshine.html");
+}
+}
+function confirm4()
+{
+if(confirm("Are you sure that you want to book a room in our hotel.?"))
+{
+window.location.assign("luxary room.html");
+}
+else
+{
+window.location.assign("sunshine.html");
+}
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$("#d").ready(function()
+{
+$("#de").hide();
+$("#d").click(function()
+{
+$("#de").show();
+$("#abcd").hide();
+$("#def").hide();
+});
+});
+
+$("#dr").ready(function()
+{
+$("#def").hide();
+$("#dr").click(function()
+{
+$("#def").show();
+$("#abcd").hide();
+$("#de").hide();
+});
+});
+$("#m").ready(function()
+{
+$("#m").click(function()
+{
+$("#abcd").show();
+$("#def").hide();
+$("#de").hide();
+});
+});
+
+$(document).ready(function(){
+$("#hot1").ready(function() {
+$("#hotel").slideUp(2000).slideDown(2000).animate({fontSize:'80px'},2000).animate({fontSize:'60px'},2000);
+});
+});
+$(document).ready(function(){
+$("#hot1").click(function() {
+$("#hotel").slideUp(2000).slideDown(2000).animate({fontSize:'80px'},2000).animate({fontSize:'60px'},2000);
+});
+});
+
+
+</script>
+</head>
+<body style="background-color:rgb(255, 230, 255);">
+
+<div id="head">
+<a href="#" style="text-decoration:none;"> HOME</a> |
+<a href="#single" style="text-decoration:none;"> ROOMS </a>|
+<a href="#boo" style="text-decoration:none;" >DINNING </a>|
+<a href="#contacts" style="text-decoration:none;"> CONTACTS </a> 
+<a href="#abc" style="border:1px solid black;font-size:25px;text-decoration:none; "> BOOK A ROOM</a>
+</div> 
+<marquee style="font-size:20px;color:red;">ROOMS AVAILABLE..!!</marquee>
+<div>
+<img src="hotel9.jpg" height="580px" width="1505px" style="position:absolute;margin-top:20px;" id="hot1">
+
+<div style="color:white; font-size:60px; position:relative;text-align:center;margin-left:550px;margin-top:50px;" id="hotel">HOTEL <br>THE SUNSHINE</div>
+
+<div id="a" style="color:white;">
+
+<div style="float:left;cursor:pointer;">
+<label for="arrival time"><b>ARRIVAL :</B></label><br>
+<input type="date" name="date" placeholder="check-in-time"   style="width:250px; height:30px;" >
+</div>
+
+<div style="float:left; margin-left:70px;cursor:pointer;">
+<label for="departure time"><b>DEPARTURE :</B></label><br>
+<input type="date" name="date" style="width:250px; height:30px;" >
+</div>
+
+<div style="float:left; margin-left:70px;cursor:pointer;">
+<label for="adults"><b>ADULTS:</b></label><br>
+<select id="adults" name="adults" style="width:200px; height:30px;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+</div>
+
+<div style="float:left; margin-left:70px;cursor:pointer;">
+<label for="children"><b>CHILDREN:</b></label><br>
+<select id="children" name="children"style="width:200px; height:30px;">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+</div>
+
+<div style="float:left; margin-left:70px;cursor:pointer;">
+<input type="submit" onmouseover="check()" onmouseout="checkover()" value="check availability" style="color:white;background-color:brown;" id="ahk">
+</div>
+
+</div>
+</div>
+<div style="margin-top:610px;height:590px;">
+<div style="float:left;margin-left:50px; width:550px;padding:30px;margin-top:50px;">
+<p style="font-size:50px;text-decoration:underline;color:blue;">THE SUNSHINE HOTEL</p>
+<p style="font-size:30px;text-align:justify">4 different types of rooms from singles to suites offer a variety of choice,
+ just as much as our excellent dining & our lobby bar... Additional services and amenities, 
+ on par with reasonable prices, make us stand out and win over both Indiana visiting 
+ tourists and businessmen on a go...</p>
+</div>
+<div style="border:15px solid white;float:right;margin-right:30px;margin-top:30px;">
+<img src="hotel7.jpg" height="500px" width="700px">
+</div>
+</div>
+
+<div style="margin-top:100px;text-align:center;" id="abc">
+<h2>PLENTY OF ROOMS...</h2>
+
+<div id="single" onmouseover="single()" onmouseout="singleover()" style="border:1px double grey; padding:18px; height:570px; width:330px;float:left;background-color:white;">
+<img src="singlebed.jpg" height="320px" width="330px" align="left" id="sd" >
+<h1>SINGLE ROOM</h1>
+<h2>Rs. 1500/per night</h2>
+<ul style="text-align:left;">
+<li>1 single bed</li>
+<li>suitable for single person</li>
+<li>batroom attached</li>
+<li>AC availabale</li>
+<li>only 5 rooms available</li>
+</ul>
+<button style="height:30px; width:200px;background-color:rgb(255, 204, 221); cursor:pointer;" onclick="confirm1()">BOOK NOW!</button>
+</div>
+
+<div id="double" onmouseover="double()" onmouseout="doubleover()" style="border:1px double grey; padding:18px; height:570px; width:330px; float:left; margin-left:5px;background-color:white;">
+<img src="double1.jpg" height="320px" width="330px" align="left" >
+
+<h1>DOUBLE ROOM</h1>
+<h2>Rs. 2500/per night</h2>
+<ul style="text-align:left;">
+<li>1 double bed</li>
+<li>suitable for couples</li>
+<li>batroom attached</li>
+<li>AC availabale</li>
+<li>only 10 rooms available</li>
+</ul>
+<button style="height:30px; width:200px;background-color:rgb(255, 204, 221); cursor:pointer;" onclick="confirm2()">BOOK NOW!</button>
+</div>
+
+<div id="family" onmouseover="family()" onmouseout="familyover()"style="border:1px double grey; padding:18px; height:570px; width:330px; float:left; margin-left:5px;background-color:white;">
+<img src="family.jpg" height="320px" width="330px" align="left">
+<h1>FAMILY ROOM</h1>
+<h2>Rs. 4000/per night</h2>
+<ul style="text-align:left;">
+<li>1 double bed+2 single beds</li>
+<li>suitable for family</li>
+<li>batroom attached</li>
+<li>AC availabale</li>
+<li>only 8 rooms available</li>
+</ul>
+<button style="height:30px; width:200px;background-color:rgb(255, 204, 221); cursor:pointer;" onclick="confirm3()">BOOK NOW!</button>
+</div>
+
+<div id="luxary" onmouseover="luxary()" onmouseout="luxaryover()" style="border:1px double grey; padding:18px; height:570px; width:330px; float:left; margin-left:5px;background-color:white;">
+<img src="luxary1.jpg" height="320px" width="330px" align="left">
+<h1>LUXARY ROOM</h1>
+<h2>Rs. 6000/per night</h2>
+<ul style="text-align:left;">
+<li>2 double bed</li>
+<li>suitable for </li>
+<li>batroom attached</li>
+<li>AC + blowers availabale</li>
+<li>only 5 rooms available</li>
+</ul>
+<button style="height:30px; width:200px;background-color:rgb(255, 204, 221); cursor:pointer;" onclick="confirm4()" id="boo">BOOK NOW!</button>
+</div>
+
+</div>
+<div id="din">
+<h1><center>DINNING</center></h1>
+<h4 style="font-family:comic sans MS;margin-left:200px;margin-right:200px;text-align:center;">Taste our trademark cocktails & enjoy a truly unique culinary experience...
+ As the sun sets and the sky turns purple, we celebrate the violet hour and 
+ the end of the day before welcoming the start of the night.</h4>
+ <center><a href="#abcd" onclick="main()" style="text-decoration:none;cursor:pointer;" id="m">MAINS</a>
+ <a href="#de" onclick="dessert()" style="text-decoration:none;margin-left:25px;cursor:pointer;" id="d">DESSERTS</a>
+ <a href="#def" onclick="drinks()" style="text-decoration:none;margin-left:25px;cursor:pointer;" id="dr">DRINKS</a></center>
+ 
+<div id="abcd" style="border:3px double black;padding:25px;height:350px;background-color:rgb(255, 255, 153);">
+
+<DIV id="123" style="float:left;margin-left:25px;font-size:25px; border:2px solid black;padding:25px;background-color:white;">
+ <pre>SHAHI PANEER                             RS. 250/-plate</pre>
+ <pre>DAL MAKANI                               RS. 180/-plate</pre>
+ <pre>PINNAPPLE RAITA                          RS. 150/-plate</pre>
+ <pre>TANDORI ROTI                             RS. 20/-piece</Pre>
+ <Pre>SALAD                                    RS. 50/-plate</Pre>
+ </DIV>
+ <DIV>
+ <IMG SRC="shahi.jpg" style="margin-left:150px;border: 10px solid black;" id="mains" height="320px" width="430px">
+ </div>
+ </div>
+ 
+ <div id="de" style="border:3px double black;padding:25px;height:350px;background-color:rgb(204, 230, 255);">
+
+<DIV id="1234" style="float:left;margin-left:25px;font-size:25px; border:2px solid black;padding:25px;background-color:white;">
+ <pre>RASMALAI                                  RS. 40/-piece</pre>
+ <pre>GULAB JAMUN                               RS. 30/-piece</pre>
+ <pre>CHOCOLATE ICECREAM                        RS. 120/-cup</pre>
+ <pre>FRUIT CREAM                               RS. 150/-cup</Pre>
+ </DIV>
+ <DIV>
+ <IMG SRC="dessert.jpg" style="margin-left:150px;border: 10px solid black;" id="dessert" height="320px" width="430px">
+ </div>
+ </div>
+
+ <div id="def" style="border:3px double black;padding:25px;height:350px;background-color:rgb(255, 179, 217)"> 
+ <DIV id="1234" style="float:left;margin-left:25px;font-size:25px; border:2px solid black;padding:25px;background-color:white;">
+ <pre>OREO SHAKE                             RS. 100/-250ml</pre>
+ <pre>MINT MOJITO                            RS. 80/-glass</pre>
+ <pre>SOFT DRINKS                            RS. 25/-200ml</pre>
+ <pre>KESSAR MILK                            RS. 60/-200ml</Pre>
+ </DIV>
+ <DIV>
+ <IMG SRC="mojito.jpg" style="margin-left:150px;border: 10px solid black;" id="drinks" height="320px" width="430px">
+ </div>
+ </div>
+ 
+</div>
+
+
+<div>
+<label for="feedback"><h2>FEEDBACK:</h2></label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:50px; width:1500px;"></textarea>
+<input type="submit" value="submit"style="margin-left:1400px;height:30px;width:100px;">
+</div>
+<br>
+<div style="border:2px double black;padding-bottom:20px;" id="contacts">
+<p style="font-size:50px; margin-left:100px;">CONTACTS:</p>
+<div style="font-size:30px;margin-left:100px;">
+<img src="location.jpg" height="30px" width="30px">.....hotel the sunshine,opp. lotus temple, new delhi.<br>
+<img src="phone.jpg" height="30px" width="30px">.....+91 7404268515<br>
+<img src="email.jpg" height="30px" width="30px">.....anshika18.jain@gmail.com.<br>
+</div>
+</div>
+</body>
+</html>
